@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="395dp"
+        android:layout_height="46dp"
+        android:inputType="text"
+        android:text="@string/nombre" />
+
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E91E63"
+        android:clickable="false"
+        android:hapticFeedbackEnabled="false"
+        android:inputType="text"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/botonOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoText="false"
+        android:backgroundTint="#9C9797"
+        android:text="@string/boton_text1"
+        android:textColor="#000000" />
+
+
+    <Button
+        android:id="@+id/botonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@+id/botonOK"
+        android:backgroundTint="#9C9797"
+        android:foregroundTint="#000000"
+        android:text="@string/boton_text2"
+        android:textColor="#000000" />
+
+</RelativeLayout>
